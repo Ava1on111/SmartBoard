@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="25.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <CheckBox fx:id="descCheckbox" layoutX="5.0" layoutY="5.0" mnemonicParsing="false" onAction="#onCompletionChanged" prefHeight="16.0" prefWidth="430.0" text="CheckBox">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </CheckBox>
+      <Hyperlink layoutX="474.0" layoutY="2.0" onAction="#onEdit" text="Edit">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink layoutX="504.0" layoutY="2.0" onAction="#onDelete" text="Delete">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Hyperlink>
+   </children>
+</AnchorPane>

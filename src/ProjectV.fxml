@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<fx:root type="Tab" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.91">
+	<AnchorPane prefHeight="628.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+		<ScrollPane prefHeight="600.0" prefWidth="1200.0">
+			<AnchorPane>
+				<HBox fx:id="hBox" prefHeight="628.0" prefWidth="1200.0" spacing="10.0"/>
+			</AnchorPane>
+		</ScrollPane>
+	</AnchorPane>
+</fx:root>

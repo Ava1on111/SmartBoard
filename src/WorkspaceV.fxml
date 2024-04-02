@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<AnchorPane fx:id="anchorPane" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WorkspaceC">
+    <MenuBar layoutY="-2.0" prefHeight="32.0" prefWidth="1200.0">
+        <Menu mnemonicParsing="false" text="Workspace">
+            <MenuItem mnemonicParsing="false" onAction="#onNewProject" text="New project"/>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Project">
+            <MenuItem fx:id="addItem" mnemonicParsing="false" onAction="#onAddColumn" text="Add column"/>
+            <MenuItem fx:id="renameItem" mnemonicParsing="false" onAction="#onRename" text="Rename"/>
+            <SeparatorMenuItem mnemonicParsing="false"/>
+            <MenuItem fx:id="setDefaultItem" mnemonicParsing="false" onAction="#onSetDefault" text="Set as default"/>
+            <MenuItem fx:id="unsetDefaultItem" mnemonicParsing="false" onAction="#onUnsetDefault" text="Unset default"/>
+            <SeparatorMenuItem mnemonicParsing="false"/>
+            <RadioMenuItem fx:id="deleteItem" mnemonicParsing="false" onAction="#onDelete" text="Delete"/>
+        </Menu>
+    </MenuBar>
+    <HBox fx:id="hBox" layoutY="30.0" prefHeight="40.0" prefWidth="1200.0">
+        <Label fx:id="inspirationLabel" alignment="CENTER" prefHeight="40.0" prefWidth="800.0" text="Inspiration" textFill="#434343">
+            <font>
+                <Font name="Times New Roman Italic" size="12.0"/>
+            </font>
+        </Label>
+        <ImageView fx:id="portraitIV" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true"/>
+        <Label fx:id="nameLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="40.0" prefWidth="200.0" text="Fullname" textFill="#363636">
+            <font>
+                <Font name="Consolas" size="14.0"/>
+            </font>
+        </Label>
+        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onProfile" text="Profile">
+            <HBox.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </HBox.margin>
+        </Button>
+        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onLogout" text="Logout">
+            <HBox.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </HBox.margin>
+        </Button>
+    </HBox>
+    <TabPane fx:id="projectsPane" layoutY="70.0" prefHeight="628.0" prefWidth="1200.0" tabClosingPolicy="UNAVAILABLE"/>
+</AnchorPane>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ProfileC">
+   <ImageView fx:id="portraitIV" fitHeight="220.0" fitWidth="220.0" layoutX="15.0" layoutY="15.0" onMouseClicked="#onPortrait" pickOnBounds="true"/>
+   <Label alignment="CENTER" layoutX="250.0" layoutY="25.0" prefWidth="80.0" text="Username"/>
+   <Label alignment="CENTER" layoutX="250.0" layoutY="90.0" prefWidth="80.0" text="First name"/>
+   <Label alignment="CENTER" layoutX="250.0" layoutY="155.0" prefWidth="80.0" text="Last name"/>
+   <Label alignment="CENTER" layoutX="20.0" layoutY="250.0" prefWidth="210.0" text="Click to select profile picture" textFill="#8d8d8d"/>
+   <TextField fx:id="usernameField" disable="true" layoutX="340.0" layoutY="20.0"/>
+   <TextField fx:id="firstnameField" layoutX="340.0" layoutY="85.0"/>
+   <TextField fx:id="lastnameField" layoutX="340.0" layoutY="150.0"/>
+   <Button layoutX="325.0" layoutY="235.0" mnemonicParsing="false" onAction="#onUpdate" prefWidth="80.0" text="Update"/>
+   <Button layoutX="435.0" layoutY="235.0" mnemonicParsing="false" onAction="#onCancel" prefWidth="80.0" text="Cancel"/>
+</AnchorPane>
